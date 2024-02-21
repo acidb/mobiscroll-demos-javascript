@@ -1,4 +1,4 @@
-import * as mobiscroll from '@mobiscroll/javascript/dist/js/mobiscroll.javascript.min.js';
+import * as mobiscroll from '@mobiscroll/javascript';
 
 export default {
   // eslint-disable-next-line es5/no-shorthand-properties
@@ -527,7 +527,6 @@ export default {
         );
       },
       renderMonthFooter: function (args) {
-        console.log('renderMonthFooter', args);
         return getOccuppancy(args.events);
       },
     });
