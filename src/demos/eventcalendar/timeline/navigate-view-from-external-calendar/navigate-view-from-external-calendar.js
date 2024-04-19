@@ -19,13 +19,18 @@ export default {
       view: {
         timeline: { type: 'day' },
       },
+      resources: [
+        { id: 1, name: 'Resource 1', color: 'red' },
+        { id: 2, name: 'Resource 2', color: 'orange' },
+        { id: 3, name: 'Resource 3', color: 'blue' },
+      ],
       onSelectedDateChange: function (args) {
         monthInst.setVal(args.date);
       },
     });
 
     mobiscroll.getJson(
-      'https://trial.mobiscroll.com/events/?vers=5',
+      'https://trial.mobiscroll.com/filter-resource-events/',
       function (events) {
         dayInst.setEvents(events);
       },
