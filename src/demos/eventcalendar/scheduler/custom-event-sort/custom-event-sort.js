@@ -15,12 +15,9 @@ export default {
     mobiscroll.eventcalendar('#demo-custom-event-sort', {
       // drag,
       view: {
-        calendar: {
+        schedule: {
           type: 'week',
         },
-      },
-      eventOrder: function (event) {
-        return event.accepted ? 1 : -1;
       },
       data: [
         {
