@@ -108,6 +108,7 @@ export default {
           resource: 2,
         },
       ],
+      selectMultipleEvents: true,
       dragToCreate: true,
       dragToMove: true,
       dragToResize: true,

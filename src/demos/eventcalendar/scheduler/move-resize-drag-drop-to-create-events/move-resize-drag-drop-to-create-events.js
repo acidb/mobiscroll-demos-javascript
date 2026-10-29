@@ -73,6 +73,7 @@ export default {
           color: '#339966',
         },
       ],
+      selectMultipleEvents: true,
       dragToCreate: true,
       dragToMove: true,
       dragToResize: true,
